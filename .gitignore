@@ -1,0 +1,14 @@
+node_modules/
+.env
+.DS_Store
+*.log
+target/
+*.class
+*.iml
+.idea/
+.vscode/
+build/
+*.jar
+*.war
+*.pem
+*.key

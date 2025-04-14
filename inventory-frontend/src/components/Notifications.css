@@ -1,0 +1,158 @@
+/* Notifications.css */
+
+.notifications-card {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .notification-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notification-item {
+    border: 1px solid #ddd;
+    border-left: 5px solid #aaa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background 0.3s ease;
+  }
+  
+  .notification-item.warning {
+    border-left-color: #ff9800;
+    background-color: #fff3e0;
+  }
+  
+  .notification-item.info {
+    border-left-color: #2196f3;
+    background-color: #e3f2fd;
+  }
+  
+  .note-message {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .note-details {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .risk-label {
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: white;
+  }
+  
+  .risk-label.high {
+    background-color: #e53935;
+  }
+  
+  .risk-label.medium {
+    background-color: #fbc02d;
+    color: black;
+  }
+  
+  .risk-label.low {
+    background-color: #4caf50;
+  }
+  
+  .stock-left {
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .reorder-btn {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .reorder-btn:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+  }
+  
+  .reorder-btn.animate {
+    animation: pulse 0.4s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .popup-message {
+    background-color: #fff;
+    padding: 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .emoji {
+    font-size: 24px;
+  }
+  

@@ -1,0 +1,97 @@
+/* src/components/SalesHistory.css */
+
+.sales-history-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 0.4s ease-in-out;
+  margin-top: 30px;
+}
+
+.sales-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.sales-history-card h2 {
+  font-size: 28px;
+  color: #6a11cb;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.sales-filter {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.sales-filter:hover,
+.sales-filter:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.sales-table thead {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.sales-table tbody tr {
+  transition: background 0.3s ease;
+}
+
+.sales-table tbody tr:nth-child(odd) {
+  background-color: #f9f9ff;
+}
+
+.sales-table tbody tr:nth-child(even) {
+  background-color: #f3f6ff;
+}
+
+.sales-table tbody tr:hover {
+  background-color: #e0e7ff;
+}
+
+.no-sales {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #999;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
