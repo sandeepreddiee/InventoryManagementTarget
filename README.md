@@ -155,5 +155,4 @@ Contributions are welcome!
 
 ## 📩 Contact
 
-For questions or support, contact the project maintainers at `your-email@example.com`.
-```
+For questions or support, contact the project maintainers at `sandeep.gandluri@gmail.com`.
