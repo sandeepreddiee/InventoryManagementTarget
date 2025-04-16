@@ -130,14 +130,14 @@ The frontend will be available at `http://localhost:3000`.
 
 ## 🖼️ Screenshots
 
-### 🔹 Authentication
-![Authentication](./Screenshots/AuthenticationPage.png)
+### 🔹 Authentication using Cognito
+![Authentication](./screenshots/AuthenticationPage.png)
 
-### 🔹 Dashboard
-![Dashboard](./Screenshots/DashboardImage.png)
+### 🔹 Live Dashboard
+![Dashboard](./screenshots/DashboardImage.png)
 
-### 🔹 Low-Stock Alerts
-![Low-Stock Alerts](./Screenshots/NotificationsPage.png)
+### 🔹 Low-Stock Alerts using SES
+![Low-Stock Alerts](./screenshots/NotificationsPage.png)
 
 ---
 
